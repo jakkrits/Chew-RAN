@@ -7,7 +7,9 @@ const Default = props =>
   <App>
     <Helmet>
       <title>
-        {props.title !== '' ? `${props.title} :: RAN! Example` : 'RAN! Example'}
+        {props.title !== ''
+          ? `${props.title} :: ChewLounge Timesheet`
+          : 'ChewLounge Timesheet'}
       </title>
     </Helmet>
     <Header pathname={props.url.pathname} />

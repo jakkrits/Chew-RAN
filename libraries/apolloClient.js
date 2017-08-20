@@ -3,7 +3,9 @@ import persist from './persist';
 
 const initNetworkInterface = token => {
   const networkInterface = createNetworkInterface({
-    uri: 'https://api.graph.cool/simple/v1/cj4mzi2969klp0149awcubkdo',
+    uri:
+      process.env.GRAPHQL_ENDPOINT ||
+      'https://api.graph.cool/simple/v1/cj4mzi2969klp0149awcubkdo',
     opts: {
       credentials: 'same-origin'
     }

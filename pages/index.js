@@ -3,8 +3,8 @@ import DefaultCon from '../containers/Default';
 
 export default withData(props =>
   <DefaultCon {...props}>
-    <div className="container">
-      <section className="hero is-info is-large">
+    <div className="container" style={{ width: '100%' }}>
+      <section className="hero is-info">
         <div className="hero-head">
           <header className="nav">
             <div className="container">

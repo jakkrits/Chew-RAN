@@ -46,6 +46,15 @@ injectGlobal`
   * {
     font-family: Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
   }
+  @media screen and (min-width: 1452px).container {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 1260px).container {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 1068px).container {
+    max-width: 100%;
+  }
 `;
 
 export default App;

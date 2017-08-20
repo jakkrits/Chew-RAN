@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import App from '../components/App';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import NavHeader from '../components/NavHeader';
 
 const Default = props =>
   <App>
@@ -13,6 +14,7 @@ const Default = props =>
           : 'ChewLounge Timesheet'}
       </title>
     </Helmet>
+    <NavHeader />
     <Header pathname={props.url.pathname} />
     {props.children}
     <Footer />

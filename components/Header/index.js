@@ -147,7 +147,7 @@ class Header extends React.Component {
               </Link>
 
               <div className="navbar-item has-dropdown is-hoverable">
-                <a className="navbar-link  is-active" href="/">
+                <a className="navbar-link" href="/">
                   พนักงาน
               </a>
                 <div className="navbar-dropdown is-boxed">

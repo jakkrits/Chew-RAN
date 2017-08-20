@@ -7,7 +7,10 @@ export default class MyDocument extends Document {
     const documentProps = await super.getInitialProps(...args);
     // see https://github.com/nfl/react-helmet#server-usage for more information
     // 'head' was occupied by 'renderPage().head', we cannot use it
-    return { ...documentProps, helmet: Helmet.rewind() };
+    return {
+      ...documentProps,
+      helmet: Helmet.rewind()
+    };
   }
 
   // should render on <html>
@@ -65,12 +68,12 @@ export default class MyDocument extends Document {
             href="/static/favicon/favicon-16x16.png"
           />
           <link rel="manifest" href="/static/favicon/manifest.json" />
-          <link
-            rel="mask-icon"
-            href="/static/favicon/safari-pinned-tab.svg"
-            color="#5bbad5"
+          <link rel="shortcut icon" href="/static/favicon/favicon.ico" />
+          <meta
+            name="msapplication-config"
+            content="/static/favicon/browserconfig.xml"
           />
-          <meta name="theme-color" content="#ffffff" />
+          <meta name="theme-color" content="#ffffff" />{' '}
           {this.helmetHeadComponents()}
           {styleTags}
         </Head>

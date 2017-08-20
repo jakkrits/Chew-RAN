@@ -32,33 +32,19 @@ class NavHeader extends React.Component {
             <NavLeft>
               <NavItem isBrand>Chew Lounge</NavItem>
             </NavLeft>
-            <NavCenter>
-              <NavItem>
-                <Icon>
-                  <span className="fa fa-github" aria-hidden="true" />
-                </Icon>
-              </NavItem>
-              <NavItem>
-                <Icon>
-                  <span className="fa fa-twitter" aria-hidden="true" />
-                </Icon>
-              </NavItem>
-            </NavCenter>
             <NavRight isMenu>
-              <NavItem>Home</NavItem>
-              <NavItem>Documentation</NavItem>
               <NavbarItem>
-            <Field isGrouped>
-                <Control>
-                    <Button id="twitter" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://bloomer.js.org" target="_blank" href="https://twitter.com/intent/tweet?text=bloomer: a set of React Stateless Components for bulma.io&amp;url=http://bloomer.js.org&amp;via=AlgusDark">
-                        <Icon>
-                            <span className="fa fa-sign-in" aria-hidden="true" />
-                        </Icon>
-                        <span>Login</span>
+                <Field isGrouped>
+                  <Control>
+                    <Button>
+                      <Icon>
+                        <span className="fa fa-sign-in" aria-hidden="true"/>
+                      </Icon>
+                      <span>Login</span>
                     </Button>
-                </Control>
-            </Field>
-        </NavbarItem>
+                  </Control>
+                </Field>
+              </NavbarItem>
             </NavRight>
           </Nav>
         </HeroHeader>
@@ -66,6 +52,7 @@ class NavHeader extends React.Component {
         <HeroBody>
           <Container hasTextAlign="centered">
             <Title>ชิวเล๊าจ์ ไทม์ชีท</Title>
+            <Icon><i className="fa fa-free-code-camp"/></Icon>
           </Container>
         </HeroBody>
         <HeroFooter>

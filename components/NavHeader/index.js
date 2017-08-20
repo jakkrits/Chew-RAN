@@ -5,15 +5,19 @@ import {
   HeroHeader,
   HeroBody,
   HeroFooter,
+  Field,
+  Control,
+  Button,
   Nav,
   NavLeft,
   NavItem,
+  NavbarItem,
   NavCenter,
   Icon,
   NavRight,
   Container,
-  Title,
   Tab,
+  Title,
   Tabs,
   TabLink,
   TabList
@@ -26,7 +30,7 @@ class NavHeader extends React.Component {
         <HeroHeader>
           <Nav>
             <NavLeft>
-              <NavItem isBrand>Bloomer</NavItem>
+              <NavItem isBrand>Chew Lounge</NavItem>
             </NavLeft>
             <NavCenter>
               <NavItem>
@@ -43,6 +47,18 @@ class NavHeader extends React.Component {
             <NavRight isMenu>
               <NavItem>Home</NavItem>
               <NavItem>Documentation</NavItem>
+              <NavbarItem>
+            <Field isGrouped>
+                <Control>
+                    <Button id="twitter" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://bloomer.js.org" target="_blank" href="https://twitter.com/intent/tweet?text=bloomer: a set of React Stateless Components for bulma.io&amp;url=http://bloomer.js.org&amp;via=AlgusDark">
+                        <Icon>
+                            <span className="fa fa-twitter" aria-hidden="true" />
+                        </Icon>
+                        <span>Tweet</span>
+                    </Button>
+                </Control>
+            </Field>
+        </NavbarItem>
             </NavRight>
           </Nav>
         </HeroHeader>

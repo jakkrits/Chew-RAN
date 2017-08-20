@@ -26,7 +26,7 @@ import {
 class NavHeader extends React.Component {
   render() {
     return (
-      <Hero isColor="info" isSize="medium">
+      <Hero isColor="primary" isSize="small">
         <HeroHeader>
           <Nav>
             <NavLeft>
@@ -52,9 +52,9 @@ class NavHeader extends React.Component {
                 <Control>
                     <Button id="twitter" data-social-network="Twitter" data-social-action="tweet" data-social-target="http://bloomer.js.org" target="_blank" href="https://twitter.com/intent/tweet?text=bloomer: a set of React Stateless Components for bulma.io&amp;url=http://bloomer.js.org&amp;via=AlgusDark">
                         <Icon>
-                            <span className="fa fa-twitter" aria-hidden="true" />
+                            <span className="fa fa-sign-in" aria-hidden="true" />
                         </Icon>
-                        <span>Tweet</span>
+                        <span>Login</span>
                     </Button>
                 </Control>
             </Field>
@@ -65,7 +65,7 @@ class NavHeader extends React.Component {
 
         <HeroBody>
           <Container hasTextAlign="centered">
-            <Title>Title</Title>
+            <Title>ชิวเล๊าจ์ ไทม์ชีท</Title>
           </Container>
         </HeroBody>
         <HeroFooter>
